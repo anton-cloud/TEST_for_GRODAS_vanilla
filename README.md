@@ -15,3 +15,36 @@ Last містить 2 самих нових елементів.
 2. Згрупувати елементи за назвою тегу, визначити кількість елементів для кожного тегу.
 3. Згрупувати елементи за кількістю символів у назві тегу, визначити кількість елементів.
 Отримані дані вивести у консоль.
+
+**Щоб запустити проект локально**
+```sh
+git clone https://github.com/anton-cloud/TEST_for_GRODAS_vanilla.git
+```
+- файлы [index.js]:
+```sh
+const fetchData = async () => {
+  // const localStart = '/';
+  const gitHubStart = 'https://anton-cloud.github.io/TEST_for_GRODAS_vanilla/'
+
+  const req = await fetch(`${gitHubStart}data.json`, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    }
+  });
+```
+- замінити на:
+```sh
+const fetchData = async () => {
+  const localStart = '/';
+  // const gitHubStart = 'https://anton-cloud.github.io/TEST_for_GRODAS_vanilla/'
+
+  const req = await fetch(`${localStart}data.json`, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    }
+  });
+```
+- запустити проект локально (для VS CODE скористатися Live Server) 
+
