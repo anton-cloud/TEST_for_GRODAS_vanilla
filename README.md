@@ -20,7 +20,7 @@ Last містить 2 самих нових елементів.
 ```sh
 git clone https://github.com/anton-cloud/TEST_for_GRODAS_vanilla.git
 ```
-- файлы [index.js]:
+- частину коду у файлі [index.js]:
 ```sh
 const fetchData = async () => {
   // const localStart = '/';
